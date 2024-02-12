@@ -1,0 +1,44 @@
+.accordion {
+	padding: 3px 0 2px;
+	cursor: pointer;
+	& + & {
+		border-top: 1px solid #dddfe0;
+	}
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 171%;
+		color: rgba(0, 0, 0, 0.8);
+		gap: 24px;
+	}
+	&__arrow {
+		width: 24px;
+		height: 24px;
+		transition: all 0.3s;
+	}
+	&__hidden {
+		display: none;
+	}
+	&__text {
+		margin-top: 5px;
+		margin-bottom: 10px;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 140%;
+		color: rgba(0, 0, 0, 0.8);
+		p + p {
+			margin-top: 5px;
+		}
+	}
+	&.active {
+		.accordion {
+			&__arrow {
+				transform: rotate(-180deg);
+				transition: all 0.3s;
+			}
+		}
+	}
+}
