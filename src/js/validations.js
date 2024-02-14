@@ -38,7 +38,7 @@ $(document).ready(function () {
 		$.fancybox.close();
 		$.fancybox.open({
 			loop: false,
-			src: '#modal-thanks',
+			src: '#modal-calculate',
 			baseClass: 'dark-fancybox',
 			touch: false,
 		});

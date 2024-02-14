@@ -6,8 +6,6 @@ $('.burger').on("click", function (event) {
 });
 
 $('.menu a').on("click", function () {
-	$('.menu li').removeClass("active");
-	$(this).parent().addClass("active");
 	$('.burger').removeClass('active');
 	$('body').removeClass('lock');
 	$('.header-bottom').removeClass('active');
