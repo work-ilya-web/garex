@@ -96,6 +96,9 @@
 	}
 	&__btn {
 		width: 170px;
+		&.car-3--js {
+			background-color: #fab619;
+		}
 	}
 }
 @media (max-width: 1200px) {

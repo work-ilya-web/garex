@@ -63,6 +63,15 @@
 			height: 10px;
 		}
 	}
+	&__btn {
+		box-shadow: 0 18px 25px -12px rgba(255, 221, 45, 0.35);
+		&:hover {
+			box-shadow: 0 18px 25px -12px rgba(252, 197, 33, 0.35);
+		}
+		&:active {
+			box-shadow: 0 18px 25px -12px rgba(250, 182, 25, 0.35);
+		}
+	}
 	&__row {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);

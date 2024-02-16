@@ -1,0 +1,134 @@
+.privacy-policy {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	h1 {
+		font-size: 40px;
+		line-height: 1;
+		letter-spacing: -0.02em;
+		color: #313132;
+		margin: 0px 0px 32px;
+	}
+	h4 {
+		font-size: 24px;
+		line-height: 24px;
+		color: #313132;
+		letter-spacing: 0px;
+		margin: 0px;
+	}
+	p {
+		font-size: 14px;
+		line-height: 143%;
+		color: #313132;
+		a {
+			color: #737373;
+			text-decoration: underline;
+			transition: all 0.3s;
+			&:hover {
+				opacity: 0.8;
+				transition: all 0.3s;
+			}
+		}
+	}
+	ol {
+		counter-reset: num;
+		li {
+			padding-left: 24px;
+			position: relative;
+			font-size: 14px;
+			line-height: 143%;
+			color: #313132;
+			&:after {
+				counter-increment: num;
+				content: counter(num) ". ";
+				position: absolute;
+				left: 6px;
+				top: 0px;
+				font-family: "Manrope", sans-serif;
+				min-width: 20px;
+				font-size: 14px;
+				line-height: 143%;
+				color: #313132;
+			}
+			a {
+				color: #737373;
+				text-decoration: underline;
+				transition: all 0.3s;
+				&:hover {
+					opacity: 0.8;
+					transition: all 0.3s;
+				}
+			}
+		}
+		li + li {
+			margin-top: 8px;
+		}
+	}
+	ul {
+		li {
+			padding-left: 24px;
+			position: relative;
+			font-size: 14px;
+			line-height: 143%;
+			color: #313132;
+			&:after {
+				content: "";
+				position: absolute;
+				left: 6px;
+				top: 0px;
+				width: 6px;
+				height: 6px;
+				left: 0px;
+				top: 9.5px;
+				background-color: #ffdd2d;
+				border-radius: 50%;
+			}
+		}
+		li + li {
+			margin-top: 8px;
+		}
+	}
+	p + h4,
+	ol + h4,
+	ul + h4 {
+		margin: 32px 0 12px;
+	}
+	p + p {
+		margin-top: 16px;
+	}
+}
+@media (max-width: 1010px) {
+	.privacy-policy {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		h1 {
+			font-size: 35px;
+		}
+		h4 {
+			font-size: 22px;
+		}
+		p + h4,
+		ol + h4,
+		ul + h4 {
+			margin: 24px 0 8px;
+		}
+	}
+}
+@media (max-width: 760px) {
+	.privacy-policy {
+		padding-top: 48px;
+		padding-bottom: 48px;
+		h1 {
+			font-size: 22px;
+			line-height: 1;
+			margin-bottom: 24px;
+		}
+		h4 {
+			font-size: 18px;
+		}
+		ol {
+			li {
+				letter-spacing: 0px;
+			}
+		}
+	}
+}

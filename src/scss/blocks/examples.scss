@@ -27,6 +27,7 @@
 		height: 100%;
 	}
 	&__img {
+		display: block;
 		width: 100%;
 		height: calc((100% - 30px) / 2);
 		border-radius: 10px;
@@ -35,6 +36,13 @@
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			transition: all 0.3s;
+		}
+		&:hover {
+			img {
+				transform: scale(1.1);
+				transition: all 0.3s;
+			}
 		}
 		&:nth-child(2n) {
 			margin-top: 30px;

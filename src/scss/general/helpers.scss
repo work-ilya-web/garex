@@ -65,7 +65,6 @@
 	color: #313132;
 	border-radius: 6px;
 	padding: 20px 58px;
-	box-shadow: 0 18px 25px -12px rgba(255, 221, 45, 0.35);
 	background-color: #ffdd2d;
 	cursor: pointer;
 	position: relative;
@@ -78,15 +77,22 @@
 	&_orange {
 		background-color: #fab619;
 	}
-	&_white {
-		background-color: #fff;
-		box-shadow: none;
-	}
 	&:hover {
 		background-color: #fcc521;
 	}
 	&:active {
 		background-color: #fab619;
+	}
+	&_white {
+		background-color: #fff;
+		&:hover {
+			background-color: #fff;
+			color: #a4a4a4;
+		}
+		&:active {
+			background-color: #fff;
+			color: #828282;
+		}
 	}
 }
 

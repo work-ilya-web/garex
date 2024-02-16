@@ -53,17 +53,6 @@
 				width: 100%;
 				height: 50px;
 			}
-			&__aggrement {
-				font-weight: 300;
-				font-size: 8px;
-				line-height: 225%;
-				text-align: center;
-				color: #313132;
-				a {
-					color: #313132;
-					text-decoration: underline;
-				}
-			}
 		}
 	}
 	&_big {
@@ -259,9 +248,12 @@
 					gap: 10px;
 					flex-wrap: wrap;
 					justify-content: center;
-					max-width: 400px;
+					max-width: 318px;
 					margin-left: auto;
 					margin-right: auto;
+				}
+				&__btn {
+					padding: 10px;
 				}
 			}
 		}
