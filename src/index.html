@@ -7,11 +7,11 @@ color: 'header--light'
 })
 
 <section class="promo">
-	<div class="promo__tree promo__tree_right">
+	<div class="promo__tree promo__tree_right"> 
 		<img src="img/promo/tree-right.png" alt="">
 	</div>
 	<div class="promo__tree promo__tree_left">
-		<img src="img/promo/tree-left.png" alt="">
+		<img src="img/promo/tree-left.png" alt=""> 
 	</div>
 	<div class="wrapper">
 		<div class="promo__wrap">
@@ -258,10 +258,10 @@ color: 'header--light'
 						процессе.</strong>
 				</div>
 			</div>
-			<form action="#" class="order-form">
+			<form action="/ajax/mail.php" class="order-form form-ajax--js" method="post">
 				<label class="order-form__label">
-					<input type="phone" name="phone" class="order-form__field field phone-mask"
-						placeholder="Введите ваш номер телефона">
+					<input type="tel" name="phone" class="order-form__field field phone-mask"
+						placeholder="Введите ваш номер телефона" data-required>
 					<div class="order-form__error">Введите номер телефона</div>
 				</label>
 				<button class="order-form__btn btn btn_small btn_white">Рассчитать стоимость</button>
@@ -420,10 +420,10 @@ color: 'header--light'
 				<div class="order__desc"><strong>Поможем перевезти</strong> любые вещи без хаоса: рассчитаем цену
 					заранее, <strong>приедем, упакуем, аккуратно перевезем и расставим по местам.</strong></div>
 			</div>
-			<form action="#" class="order-form">
+			<form action="/ajax/mail.php" class="order-form form-ajax--js" method="post">
 				<label class="order-form__label">
-					<input type="phone" name="phone" class="order-form__field field phone-mask"
-						placeholder="Введите ваш номер телефона">
+					<input type="tel" name="phone" class="order-form__field field phone-mask"
+						placeholder="Введите ваш номер телефона" data-required>
 					<div class="order-form__error">Введите номер телефона</div>
 				</label>
 				<button class="order-form__btn btn btn_small btn_white">Рассчитать стоимость</button>
@@ -916,18 +916,17 @@ color: 'header--light'
 			</div>
 			<div class="contacts__wrap">
 				<h2 class="contacts__title title"><strong>Задайте свой вопрос</strong> нашему консультанту</h2>
-				<form action="#" class="contacts__form form">
+				<form action="/ajax/mail.php" class="contacts__form form form-ajax--js" method="post">
 					<div class="form__body">
 						<label class="form__label">
 							<div class="form__caption">Ваше имя:</div>
-							<input type="name" name="name" class="form__field field"
-								placeholder="Иванов Алексей Петрович">
+							<input type="text" name="name" class="form__field field" placeholder="Иванов Алексей Петрович" data-required>
 							<div class="form__error">Введите имя</div>
 						</label>
 						<label class="form__label">
 							<div class="form__caption">Введите ваш номер телефона:</div>
-							<input type="phone" name="phone" class="form__field field phone-mask"
-								placeholder="+7 (___)___-__-__">
+							<input type="tel" name="phone" class="form__field field phone-mask"
+								placeholder="+7 (___)___-__-__" data-required>
 							<div class="form__error">Введите номер телефона</div>
 						</label>
 						<label class="form__label">

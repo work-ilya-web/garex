@@ -97,11 +97,11 @@
 </header>
 
 <section class="promo">
-	<div class="promo__tree promo__tree_right">
+	<div class="promo__tree promo__tree_right"> 
 		<img src="img/promo/tree-right.png" alt="">
 	</div>
 	<div class="promo__tree promo__tree_left">
-		<img src="img/promo/tree-left.png" alt="">
+		<img src="img/promo/tree-left.png" alt=""> 
 	</div>
 	<div class="wrapper">
 		<div class="promo__wrap">
@@ -348,10 +348,10 @@
 						процессе.</strong>
 				</div>
 			</div>
-			<form action="#" class="order-form">
+			<form action="/ajax/mail.php" class="order-form form-ajax--js" method="post">
 				<label class="order-form__label">
-					<input type="phone" name="phone" class="order-form__field field phone-mask"
-						placeholder="Введите ваш номер телефона">
+					<input type="tel" name="phone" class="order-form__field field phone-mask"
+						placeholder="Введите ваш номер телефона" data-required>
 					<div class="order-form__error">Введите номер телефона</div>
 				</label>
 				<button class="order-form__btn btn btn_small btn_white">Рассчитать стоимость</button>
@@ -510,10 +510,10 @@
 				<div class="order__desc"><strong>Поможем перевезти</strong> любые вещи без хаоса: рассчитаем цену
 					заранее, <strong>приедем, упакуем, аккуратно перевезем и расставим по местам.</strong></div>
 			</div>
-			<form action="#" class="order-form">
+			<form action="/ajax/mail.php" class="order-form form-ajax--js" method="post">
 				<label class="order-form__label">
-					<input type="phone" name="phone" class="order-form__field field phone-mask"
-						placeholder="Введите ваш номер телефона">
+					<input type="tel" name="phone" class="order-form__field field phone-mask"
+						placeholder="Введите ваш номер телефона" data-required>
 					<div class="order-form__error">Введите номер телефона</div>
 				</label>
 				<button class="order-form__btn btn btn_small btn_white">Рассчитать стоимость</button>
@@ -1006,18 +1006,17 @@
 			</div>
 			<div class="contacts__wrap">
 				<h2 class="contacts__title title"><strong>Задайте свой вопрос</strong> нашему консультанту</h2>
-				<form action="#" class="contacts__form form">
+				<form action="/ajax/mail.php" class="contacts__form form form-ajax--js" method="post">
 					<div class="form__body">
 						<label class="form__label">
 							<div class="form__caption">Ваше имя:</div>
-							<input type="name" name="name" class="form__field field"
-								placeholder="Иванов Алексей Петрович">
+							<input type="text" name="name" class="form__field field" placeholder="Иванов Алексей Петрович" data-required>
 							<div class="form__error">Введите имя</div>
 						</label>
 						<label class="form__label">
 							<div class="form__caption">Введите ваш номер телефона:</div>
-							<input type="phone" name="phone" class="form__field field phone-mask"
-								placeholder="+7 (___)___-__-__">
+							<input type="tel" name="phone" class="form__field field phone-mask"
+								placeholder="+7 (___)___-__-__" data-required>
 							<div class="form__error">Введите номер телефона</div>
 						</label>
 						<label class="form__label">
@@ -1051,23 +1050,23 @@
 			<div class="modal__subtitle">Оставьте ваши контактные данные. Мы вам перезвоним, чтобы рассчитать стоимость
 				перевозки — она фиксируется и не изменится в процессе.</div>
 		</div>
-		<form action="#" class="modal__form form">
+		<form action="/ajax/mail.php" class="modal__form form form-ajax--js" method="post">
 			<div class="form__body">
 				<label class="form__label">
 					<div class="form__caption">Введите ваше имя:</div>
-					<input type="name" name="name" class="form__field field" placeholder="Иванов Алексей Петрович">
+					<input type="text" name="name" class="form__field field" placeholder="Иванов Алексей Петрович" data-required>
 					<div class="form__error">Введите имя</div>
 				</label>
 				<label class="form__label">
 					<div class="form__caption">Введите ваш номер телефона:</div>
-					<input type="phone" name="phone" class="form__field field phone-mask" placeholder="+7 ">
+					<input type="tel" name="phone" class="form__field field phone-mask" placeholder="+7 " data-required>
 					<div class="form__error">Введите номер телефона</div>
 				</label>
 			</div>
 			<div class="form__bottom">
 				<button class="form__btn btn">Заказать машину</button>
 				<div class="form__aggrement">Нажимая кнопку «Заказать машину», вы соглашаетесь с <a
-						href="politic.html">правилами</a></div>
+						href="/privacy-policy/">правилами</a></div>
 			</div>
 		</form>
 	</div>
@@ -1090,23 +1089,23 @@
 			<div class="modal__subtitle">Оставьте ваши контактные данные. Мы вам перезвоним, чтобы рассчитать стоимость
 				перевозки — она фиксируется и не изменится в процессе.</div>
 		</div>
-		<form action="#" class="modal__form form">
+		<form action="/ajax/mail.php" class="modal__form form form-ajax--js" method="post">
 			<div class="form__body">
 				<label class="form__label">
 					<div class="form__caption">Введите ваше имя:</div>
-					<input type="name" name="name" class="form__field field" placeholder="Иванов Алексей Петрович">
+					<input type="text" name="name" class="form__field field" placeholder="Иванов Алексей Петрович" data-required>
 					<div class="form__error">Введите имя</div>
 				</label>
 				<label class="form__label">
 					<div class="form__caption">Введите ваш номер телефона:</div>
-					<input type="phone" name="phone" class="form__field field phone-mask" placeholder="+7 ">
+					<input type="tel" name="phone" class="form__field field phone-mask" placeholder="+7 " data-required>
 					<div class="form__error">Введите номер телефона</div>
 				</label>
 			</div>
 			<div class="form__bottom">
 				<button class="form__btn btn">Заказать машину</button>
 				<div class="form__aggrement">Нажимая кнопку «Заказать машину», вы соглашаетесь с <a
-						href="politic.html">правилами</a></div>
+						href="/privacy-policy/">правилами</a></div>
 			</div>
 		</form>
 	</div>
@@ -1129,23 +1128,23 @@
 			<div class="modal__subtitle">Оставьте ваши контактные данные. Мы вам перезвоним, чтобы рассчитать стоимость
 				перевозки — она фиксируется и не изменится в процессе.</div>
 		</div>
-		<form action="#" class="modal__form form">
+		<form action="/ajax/mail.php" class="modal__form form form-ajax--js" method="post">
 			<div class="form__body">
 				<label class="form__label">
 					<div class="form__caption">Введите ваше имя:</div>
-					<input type="name" name="name" class="form__field field" placeholder="Иванов Алексей Петрович">
+					<input type="text" name="name" class="form__field field" placeholder="Иванов Алексей Петрович" data-required>
 					<div class="form__error">Введите имя</div>
 				</label>
 				<label class="form__label">
 					<div class="form__caption">Введите ваш номер телефона:</div>
-					<input type="phone" name="phone" class="form__field field phone-mask" placeholder="+7 ">
+					<input type="tel" name="phone" class="form__field field phone-mask" placeholder="+7 " data-required>
 					<div class="form__error">Введите номер телефона</div>
 				</label>
 			</div>
 			<div class="form__bottom">
 				<button class="form__btn btn">Заказать грузчиков</button>
 				<div class="form__aggrement">Нажимая кнопку «Заказать грузчиков», вы соглашаетесь с <a
-						href="politic.html">правилами</a></div>
+						href="/privacy-policy/">правилами</a></div>
 			</div>
 		</form>
 	</div>
@@ -1204,23 +1203,23 @@
 					стоимость перевозки — она фиксируется
 					и не изменится в процессе.</div>
 			</div>
-			<form action="#" class="modal__form form">
+			<form action="/ajax/mail.php" class="modal__form form form-ajax--js" method="post">
 				<div class="form__body">
 					<label class="form__label">
 						<div class="form__caption">Введите ваше имя:</div>
-						<input type="name" name="name" class="form__field field" placeholder="Иванов Алексей Петрович">
+						<input type="text" name="name" class="form__field field" placeholder="Иванов Алексей Петрович" data-required>
 						<div class="form__error">Введите имя</div>
 					</label>
 					<label class="form__label">
 						<div class="form__caption">Введите ваш номер телефона:</div>
-						<input type="phone" name="phone" class="form__field field phone-mask" placeholder="+7 ">
+						<input type="tel" name="phone" class="form__field field phone-mask" placeholder="+7 " data-required>
 						<div class="form__error">Введите номер телефона</div>
 					</label>
 				</div>
 				<div class="form__bottom">
-					<button class="form__btn btn">Получить консультацию</button>
+					<button class="form__btn btn" type="submit">Получить консультацию</button>
 					<div class="form__aggrement">Нажимая кнопку «Получить консультацию», вы соглашаетесь с <a
-							href="politic.html">правилами</a></div>
+							href="/privacy-policy/">правилами</a></div>
 				</div>
 			</form>
 		</div>
@@ -1293,62 +1292,62 @@
 				<div class="modal__subtitle">Оставьте ваши контактные данные. Мы вам перезвоним, чтобы рассчитать
 					стоимость перевозки — она фиксируется и не изменится в процессе.</div>
 			</div>
-			<form action="#" class="modal__form form">
+			<form action="/ajax/mail.php" class="modal__form form form-ajax--js" method="post">
 				<div class="form__body">
 					<label class="form__label">
 						<div class="form__caption">Введите ваше имя:</div>
-						<input type="text" class="form__field field" placeholder="Иванов Алексей Петрович">
+						<input type="text" class="form__field field" name="name" placeholder="Иванов Алексей Петрович" data-required >
 						<div class="form__error">Введите имя</div>
 					</label>
 					<label class="form__label">
 						<div class="form__caption">Введите ваш номер телефона:</div>
-						<input type="text" name="phone" class="form__field field phone-mask" placeholder="+7 ">
+						<input type="text" name="phone" class="form__field field phone-mask" name="phone" placeholder="+7 " data-required >
 						<div class="form__error">Введите номер телефона</div>
 					</label>
 					<label class="form__label">
 						<div class="form__caption">Дата:</div>
-						<input id="date-from" type="text" class="form__field field date-from" placeholder="">
+						<input id="date-from" type="text" class="form__field field date-from" name="date-from" placeholder="" data-required>
 						<div class="form__error">Выберете дату</div>
 					</label>
 					<label class="form__label">
 						<div class="form__caption">Время:</div>
-						<input type="text" class="form__field field time-mask" placeholder="">
+						<input type="text" class="form__field field time-mask" name="time-from" placeholder="" data-required>
 						<div class="form__error">Выберете время</div>
 					</label>
 					<label class="form__label">
 						<div class="form__caption">Адрес погрузки:</div>
-						<input type="text" class="form__field field" placeholder="">
+						<input type="text" class="form__field field" name="address-from" placeholder="" data-required>
 						<div class="form__error">Введите адрес погрузки</div>
 					</label>
 					<label class="form__label">
 						<div class="form__caption">Адрес выгрузки:</div>
-						<input type="text" class="form__field field" placeholder="">
+						<input type="text" class="form__field field" name="address-to" placeholder="" data-required>
 						<div class="form__error">Введите адрес выгрузки</div>
 					</label>
 				</div>
 				<div class="form__info">
 					<label class="form__label">
-						<input type="text" class="form__field field" placeholder="Дом">
+						<input type="text" class="form__field field" name="house-from" placeholder="Дом" data-required>
 						<div class="form__error">Номер дома</div>
 					</label>
 					<label class="form__label">
-						<input type="text" class="form__field field" placeholder="Квартира">
+						<input type="text" class="form__field field" name="apartment-from" placeholder="Квартира" data-required>
 						<div class="form__error">Номер квартиры</div>
 					</label>
 					<label class="form__label">
-						<input type="text" class="form__field field" placeholder="Этаж">
+						<input type="text" class="form__field field"  name="floor-from" placeholder="Этаж" data-required>
 						<div class="form__error">Номер этажа</div>
 					</label>
 					<label class="form__label">
-						<input type="text" class="form__field field" placeholder="Дом">
+						<input type="text" class="form__field field" name="house-to" placeholder="Дом" data-required>
 						<div class="form__error">Номер дома</div>
 					</label>
 					<label class="form__label">
-						<input type="text" class="form__field field" placeholder="Квартира">
+						<input type="text" class="form__field field" name="apartment-to" placeholder="Квартира" data-required>
 						<div class="form__error">Номер квартиры</div>
 					</label>
 					<label class="form__label">
-						<input type="text" class="form__field field" placeholder="Этаж">
+						<input type="text" class="form__field field" name="floor-to" placeholder="Этаж" data-required>
 						<div class="form__error">Номер этажа</div>
 					</label>
 				</div>
@@ -1357,15 +1356,15 @@
 						<div class="form__container-box">
 							<div class="form__container-caption">Лифт:</div>
 							<label class="checbox">
-								<input type="radio" name="stage" value="active">
+								<input type="radio" name="elevator-from" value="Есть">
 								<div class="checbox__icon">
 									<span></span>
 								</div>
 								<div class="checbox__caption">Есть</div>
 							</label>
 							<label class="checbox">
-								<input type="radio" name="stage" value="active" checked>
-								<div class="checbox__icon">
+								<input type="radio" name="elevator-from" value="Нет" checked>
+								<div class="checbox__icon"> 
 									<span></span>
 								</div>
 								<div class="checbox__caption">Нет</div>
@@ -1374,14 +1373,14 @@
 						<div class="form__container-box">
 							<div class="form__container-caption">Лифт:</div>
 							<label class="checbox">
-								<input type="radio" name="lift" value="active">
+								<input type="radio" name="elevator-to" value="Есть">
 								<div class="checbox__icon">
 									<span></span>
 								</div>
 								<div class="checbox__caption">Есть</div>
 							</label>
 							<label class="checbox">
-								<input type="radio" name="lift" value="active" checked>
+								<input type="radio" name="elevator-to" value="Нет" checked>
 								<div class="checbox__icon">
 									<span></span>
 								</div>
@@ -1392,14 +1391,14 @@
 					<div class="form__container-bottom">
 						<div class="form__container-box">
 							<label class="checbox">
-								<input type="radio" name="movers" value="active">
+								<input type="radio" name="movers" value="Нужны">
 								<div class="checbox__icon">
 									<span></span>
 								</div>
 								<div class="checbox__caption">Грузчики нужны</div>
 							</label>
 							<label class="checbox">
-								<input type="radio" name="movers" value="active" checked>
+								<input type="radio" name="movers" value="Не нужны" checked>
 								<div class="checbox__icon">
 									<span></span>
 								</div>
@@ -1411,15 +1410,13 @@
 				<div class="form__comments">
 					<label class="form__label">
 						<div class="form__caption">Комментарий к заказу:</div>
-						<textarea class="form__field field"
-							placeholder="Опишите максимально точно характер работ, так мы сможем быстрее сориентировать Вас по стоимости услуг!"></textarea>
+						<textarea class="form__field field" name="message" placeholder="Опишите максимально точно характер работ, так мы сможем быстрее сориентировать Вас по стоимости услуг!"></textarea>
 						<div class="form__error">Напишите коментарий</div>
 					</label>
 				</div>
 				<div class="form__bottom">
-					<button class="form__btn btn">Рассчитать стоимость перевозки</button>
-					<div class="form__aggrement">Нажимая кнопку «Рассчитать стоимость перевозки», вы соглашаетесь с <a
-							href="politic.html">правилами</a></div>
+					<button class="form__btn btn" type="submit">Рассчитать стоимость перевозки</button>
+					<div class="form__aggrement">Нажимая кнопку «Рассчитать стоимость перевозки», вы соглашаетесь с <a href="/privacy-policy/">правилами</a></div>
 				</div>
 			</form>
 		</div>
